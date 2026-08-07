@@ -1,4 +1,6 @@
 nbconvert
 pyyaml
-rendercv[full]
+# Pinned: rendercv 2.7+ rejects cv.label / cv.image / cv.summary in _data/cv.yml,
+# which the al_folio_cv site template reads for the CV page's title and summary cards.
+rendercv[full]==2.6
 scholarly
