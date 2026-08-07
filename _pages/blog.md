@@ -2,7 +2,7 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: true
+nav: false # set true once the al-folio demo posts in _posts/ are replaced with your own
 nav_order: 1
 pagination:
   enabled: true

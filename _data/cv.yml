@@ -1,189 +1,182 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Naren Prakash
+  label: Statistics, Machine Learning, and Software
+  email: narenprax@gmail.com
+  location: Katy, TX, USA
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Statistician and machine learning engineer focused on time series forecasting and anomaly detection, Bayesian and sequential inference, topic modeling and NLP over scientific corpora, and reproducible, accessible statistical computing.
+
+  website: https://www.naren-p.com/
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: narenp12
     - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: naren-p
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: University of California, Los Angeles
+        location: Los Angeles, CA, USA
+        url: https://www.ucla.edu/
+        area: Statistics and Data Science
+        studyType: B.S.
+        start_date: 2021-09
+        end_date: 2025-06
+        score: "3.833 / 4.00"
+        courses: >-
+          Probability Theory, Mathematical Statistics, Linear Models, Regression
+          Analysis, Experimental Design, Monte Carlo Methods, Statistical Computing and
+          Optimization, Applied Geostatistics, Text Mining, Statistical Consulting.
+
+    Research:
+      - institution: UCLA Statistical Consulting Center
+        position: Statistical Consultant
+        location: Los Angeles, CA
+        start_date: 2025-03
+        end_date: 2025-06
+        summary: Sole owner of the institutional-factors research question within a five-person team, from analysis plan to presentation of recommendations to the client.
         highlights:
-          - Description 1.
-          - Description 2.
+          - Scoped the institutional-factors question for UCLA Academic Planning and Budget into an analysis plan and presented recommendations to the client.
+          - Assembled the data layer from College Scorecard and NCES IPEDS records (2004-2023) joined on CIP codes; cost-adjusted earnings against scraped county living-wage estimates; imputed missing fields by chained equations with random forests.
+          - Derived peer groups by HDBSCAN clustering; ranked index drivers by cross-validated LASSO and random-forest importance.
+          - Delivered findings as an interactive Dash/Plotly dashboard with pinned dependencies, reproducible by the client unaided.
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Department of Statistics, UCLA
+        position: Undergraduate Researcher
+        location: Los Angeles, CA
+        start_date: 2025-01
+        end_date: 2025-06
+        summary: Studied methodological change across 136,238 arXiv records with a pre-registered estimation approach.
         highlights:
-          - Description 1.
-          - Description 2.
+          - Designed a study of methodological change across 136,238 arXiv records; fixed estimation approach and analysis plan before running anything; deduplicated records and measured how dropping incomplete records shifted corpus composition.
+          - Built a hybrid topic-classification pipeline over LDA, BERTopic, and transformer embeddings; required agreement across all three methods before treating an assignment as an estimation input.
+          - Trained and validated a LightGBM model forecasting research-output trends by topic; evaluated stability across topic groups of very different sizes.
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - institution: Bruin Sports Analytics, UCLA
+        position: Researcher and Analyst
+        location: Los Angeles, CA
+        start_date: 2024-09
+        end_date: 2025-06
+        summary: Bayesian sequential inference over NFL play-by-play data, adopted by UCLA coaching staff.
         highlights:
-          - Relativity
-          - Description 2.
+          - Estimated NFL route-target probabilities by Bayesian updating over nflfastR play-by-play data, with posteriors revised sequentially as observations accumulated.
+          - Designed recurring match-report visualizations of rate and frequency estimates; adopted by UCLA men's tennis coaching staff for opponent scouting.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+    Teaching Experience:
+      - institution: Department of Statistics, UCLA
+        position: Statistics Curriculum Consultant
+        location: Remote
+        start_date: 2026-06
+        end_date: present
+        summary: End-to-end design of a Bayesian statistics module for an upper-division UCLA course.
         highlights:
-          - Description 1.
-          - Description 2.
+          - Translate current research literature into lecture material, worked estimation examples, and graded assignments packaged for instructor reuse.
+          - Write original expositions of each method's estimation approach and its assumptions, with original diagrams, sufficient for an instructor to teach the method from the write-up alone.
+          - Devised per-student parameterized assignments with variant parameters hashed from student identifier, checked against known analytic results, resistant to answer sharing and language-model submissions.
+          - Built the authoring toolchain and a test-backed Jupyter notebook assignment deployed in Canvas.
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - institution: CityLab at UCLA
+        position: Module Director
+        location: Los Angeles, CA
+        start_date: 2022-01
+        end_date: 2024-12
+        summary: Directed hands-on biotechnology lab sessions for visiting high school students and co-designed the instructional modules taught in them.
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - Directed hands-on biotechnology lab sessions for visiting high school students.
+          - Co-designed the instructional modules taught in them.
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+    Professional Experience:
+      - company: LivaNova
+        position: Data Management and Strategy
+        location: Houston, TX
+        start_date: 2025-05
+        end_date: 2026-04
+        summary: Established recurring measurement of enterprise cloud consumption.
+        highlights:
+          - Selected telemetry that actually measured cost and utilization, chose statistics to publish, and fixed how each estimate would be computed before building.
+          - Trained time series forecasting and anomaly-detection models on consumption data; surfaced idle and over-provisioned spend.
+          - Built ELT pipelines in Azure Synapse Analytics and Azure Data Factory, replacing a monthly email report and cutting reporting lag from roughly 30 days to near real time.
+          - Produced published estimates in SQL, Python, and Power BI and the dashboards reporting them; documented data lineage, model assumptions, and limitations for non-technical reviewers.
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - company: Halliburton
+        position: Data Science and Machine Learning R&D Intern
+        location: Houston, TX
+        start_date: 2024-06
+        end_date: 2024-09
+        summary: Time series modeling for predictive maintenance over truck-sensor telemetry targeting failures that put field operators at risk of injury.
+        highlights:
+          - Built and trained a transformer model for sequential anomaly detection from scratch, reaching 92% precision at 95% accuracy on held-out data under a time-aware validation split.
+          - Benchmarked competing estimators by reproducing published approaches against established baselines on common held-out data.
+          - Wrote a Dask multiprocessing pipeline generating and streaming synthetic training data matched to the observed telemetry distribution, clearing a throughput bottleneck on CUDA-accelerated training.
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+      - company: Neoage Services
+        position: Data Analyst Intern
+        location: Houston, TX
+        start_date: 2023-06
+        end_date: 2023-09
+        summary: Automated bank-statement generation with a Python pipeline.
+        highlights:
+          - Automated bank-statement generation with a Python pipeline, cutting production time by roughly 95% relative to the prior manual process.
+          - Wrote a parser extracting structured fields from unstructured raw statement pages, reducing manual transcription errors.
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+    Presentations:
+      - title: "Research on Research on Research: Analyzing Historical Trends in Statistical and Computational Research"
+        date: 2025-05
+        venue: Undergraduate Research Week, UCLA
+        summary: Contributed talk (presenter)
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+      - title: A Bayesian Approach to Play Prediction
+        date: 2024-12
+        venue: Bruin Sports Analytics Showcase, UCLA
+        summary: Contributed talk (presenter)
+
+      - title: Autoencoders for Predictive Maintenance
+        date: 2024-08
+        venue: Halliburton technical seminar
+        summary: Internal seminar talk (presenter)
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Statistics
+        keywords: >-
+          Estimation and estimator evaluation; regression and generalized linear models;
+          Bayesian and sequential inference; time series analysis and forecasting;
+          anomaly and outlier detection; gradient-boosted trees; experimental and study
+          design; Monte Carlo and resampling methods; geostatistics (variograms, kriging);
+          missing-data methods.
+
+      - name: Languages
+        keywords: >-
+          Python (NumPy, SciPy, Pandas, Polars, scikit-learn, PyTorch, Transformers, Dask),
+          R (base, Tidyverse), SQL, Rust (PyO3), TypeScript
+
+      - name: Data systems
+        keywords: >-
+          Microsoft Azure (Synapse Analytics, Data Factory), ETL/ELT pipeline design,
+          batch and streaming processing, Apache Spark, DuckDB
+
+      - name: Graphics
+        keywords: matplotlib, D3, Plotly/Dash, Power BI; colorblind-safe and accessible statistical graphics
+
+      - name: Tools
+        keywords: Git, CI/CD, Linux/Unix, CUDA, Jupyter, LaTeX and Typst, agentic coding with Claude Code
 
     Languages:
-      - name: German
-        summary: "Native speaker"
-
       - name: English
-        summary: "Fluent"
+        summary: Native speaker
 
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Tamil
+        summary: Receptive
 
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+      - name: Spanish
+        summary: Basic
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+      - name: Korean
+        summary: Basic
 
     References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Vivian Lew
+        reference: Senior Continuing Lecturer, Department of Statistics and Data Science, UCLA. Contact details on request.
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - name: Nicolas Christou
+        reference: Senior Continuing Lecturer, Department of Statistics and Data Science, UCLA. Contact details on request.
