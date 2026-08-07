@@ -83,6 +83,7 @@ schedule:
         url: /assets/pdf/example_pdf.pdf
       - name: Coding Lab
         url: https://github.com/
+published: false # al-folio demo course; kept for reference, hidden from /teaching/
 ---
 
 ## Course Overview

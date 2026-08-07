@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Software and research projects.
+description: Software, research, and coursework projects.
 nav: true
 nav_order: 2
-display_categories:
+display_categories: [software, coursework]
 horizontal: false
 ---
 
