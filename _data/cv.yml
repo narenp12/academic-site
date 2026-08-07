@@ -20,6 +20,8 @@ cv:
         location: Los Angeles, CA, USA
         url: https://www.ucla.edu/
         area: Statistics and Data Science
+        # `degree` is read by RenderCV, `studyType` by the al_folio_cv site template.
+        degree: B.S.
         studyType: B.S.
         start_date: 2021-09
         end_date: 2025-06
@@ -29,42 +31,10 @@ cv:
           Analysis, Experimental Design, Monte Carlo Methods, Statistical Computing and
           Optimization, Applied Geostatistics, Text Mining, Statistical Consulting.
 
-    Research:
-      - institution: UCLA Statistical Consulting Center
-        position: Statistical Consultant
-        location: Los Angeles, CA
-        start_date: 2025-03
-        end_date: 2025-06
-        summary: Sole owner of the institutional-factors research question within a five-person team, from analysis plan to presentation of recommendations to the client.
-        highlights:
-          - Scoped the institutional-factors question for UCLA Academic Planning and Budget into an analysis plan and presented recommendations to the client.
-          - Assembled the data layer from College Scorecard and NCES IPEDS records (2004-2023) joined on CIP codes; cost-adjusted earnings against scraped county living-wage estimates; imputed missing fields by chained equations with random forests.
-          - Derived peer groups by HDBSCAN clustering; ranked index drivers by cross-validated LASSO and random-forest importance.
-          - Delivered findings as an interactive Dash/Plotly dashboard with pinned dependencies, reproducible by the client unaided.
-
-      - institution: Department of Statistics, UCLA
-        position: Undergraduate Researcher
-        location: Los Angeles, CA
-        start_date: 2025-01
-        end_date: 2025-06
-        summary: Studied methodological change across 136,238 arXiv records with a pre-registered estimation approach.
-        highlights:
-          - Designed a study of methodological change across 136,238 arXiv records; fixed estimation approach and analysis plan before running anything; deduplicated records and measured how dropping incomplete records shifted corpus composition.
-          - Built a hybrid topic-classification pipeline over LDA, BERTopic, and transformer embeddings; required agreement across all three methods before treating an assignment as an estimation input.
-          - Trained and validated a LightGBM model forecasting research-output trends by topic; evaluated stability across topic groups of very different sizes.
-
-      - institution: Bruin Sports Analytics, UCLA
-        position: Researcher and Analyst
-        location: Los Angeles, CA
-        start_date: 2024-09
-        end_date: 2025-06
-        summary: Bayesian sequential inference over NFL play-by-play data, adopted by UCLA coaching staff.
-        highlights:
-          - Estimated NFL route-target probabilities by Bayesian updating over nflfastR play-by-play data, with posteriors revised sequentially as observations accumulated.
-          - Designed recurring match-report visualizations of rate and frequency estimates; adopted by UCLA men's tennis coaching staff for opponent scouting.
-
-    Teaching Experience:
-      - institution: Department of Statistics, UCLA
+    # al_folio_cv 1.0.2 renders entries only for a fixed set of section titles, so
+    # research, teaching, and industry roles all live under `Experience`.
+    Experience:
+      - company: Department of Statistics, UCLA
         position: Statistics Curriculum Consultant
         location: Remote
         start_date: 2026-06
@@ -76,17 +46,6 @@ cv:
           - Devised per-student parameterized assignments with variant parameters hashed from student identifier, checked against known analytic results, resistant to answer sharing and language-model submissions.
           - Built the authoring toolchain and a test-backed Jupyter notebook assignment deployed in Canvas.
 
-      - institution: CityLab at UCLA
-        position: Module Director
-        location: Los Angeles, CA
-        start_date: 2022-01
-        end_date: 2024-12
-        summary: Directed hands-on biotechnology lab sessions for visiting high school students and co-designed the instructional modules taught in them.
-        highlights:
-          - Directed hands-on biotechnology lab sessions for visiting high school students.
-          - Co-designed the instructional modules taught in them.
-
-    Professional Experience:
       - company: LivaNova
         position: Data Management and Strategy
         location: Houston, TX
@@ -98,6 +57,39 @@ cv:
           - Trained time series forecasting and anomaly-detection models on consumption data; surfaced idle and over-provisioned spend.
           - Built ELT pipelines in Azure Synapse Analytics and Azure Data Factory, replacing a monthly email report and cutting reporting lag from roughly 30 days to near real time.
           - Produced published estimates in SQL, Python, and Power BI and the dashboards reporting them; documented data lineage, model assumptions, and limitations for non-technical reviewers.
+
+      - company: UCLA Statistical Consulting Center
+        position: Statistical Consultant
+        location: Los Angeles, CA
+        start_date: 2025-03
+        end_date: 2025-06
+        summary: Sole owner of the institutional-factors research question within a five-person team, from analysis plan to presentation of recommendations to the client.
+        highlights:
+          - Scoped the institutional-factors question for UCLA Academic Planning and Budget into an analysis plan and presented recommendations to the client.
+          - Assembled the data layer from College Scorecard and NCES IPEDS records (2004-2023) joined on CIP codes; cost-adjusted earnings against scraped county living-wage estimates; imputed missing fields by chained equations with random forests.
+          - Derived peer groups by HDBSCAN clustering; ranked index drivers by cross-validated LASSO and random-forest importance.
+          - Delivered findings as an interactive Dash/Plotly dashboard with pinned dependencies, reproducible by the client unaided.
+
+      - company: Department of Statistics, UCLA
+        position: Undergraduate Researcher
+        location: Los Angeles, CA
+        start_date: 2025-01
+        end_date: 2025-06
+        summary: Studied methodological change across 136,238 arXiv records with a pre-registered estimation approach.
+        highlights:
+          - Designed a study of methodological change across 136,238 arXiv records; fixed estimation approach and analysis plan before running anything; deduplicated records and measured how dropping incomplete records shifted corpus composition.
+          - Built a hybrid topic-classification pipeline over LDA, BERTopic, and transformer embeddings; required agreement across all three methods before treating an assignment as an estimation input.
+          - Trained and validated a LightGBM model forecasting research-output trends by topic; evaluated stability across topic groups of very different sizes.
+
+      - company: Bruin Sports Analytics, UCLA
+        position: Researcher and Analyst
+        location: Los Angeles, CA
+        start_date: 2024-09
+        end_date: 2025-06
+        summary: Bayesian sequential inference over NFL play-by-play data, adopted by UCLA coaching staff.
+        highlights:
+          - Estimated NFL route-target probabilities by Bayesian updating over nflfastR play-by-play data, with posteriors revised sequentially as observations accumulated.
+          - Designed recurring match-report visualizations of rate and frequency estimates; adopted by UCLA men's tennis coaching staff for opponent scouting.
 
       - company: Halliburton
         position: Data Science and Machine Learning R&D Intern
@@ -120,20 +112,42 @@ cv:
           - Automated bank-statement generation with a Python pipeline, cutting production time by roughly 95% relative to the prior manual process.
           - Wrote a parser extracting structured fields from unstructured raw statement pages, reducing manual transcription errors.
 
-    Presentations:
+      - company: CityLab at UCLA
+        position: Module Director
+        location: Los Angeles, CA
+        start_date: 2022-01
+        end_date: 2024-12
+        summary: Directed hands-on biotechnology lab sessions for visiting high school students and co-designed the instructional modules taught in them.
+        highlights:
+          - Directed hands-on biotechnology lab sessions for visiting high school students.
+          - Co-designed the instructional modules taught in them.
+
+    # Conference and seminar talks. Titled `Publications` because that is the section
+    # title al_folio_cv 1.0.2 maps to its publication renderer.
+    Publications:
       - title: "Research on Research on Research: Analyzing Historical Trends in Statistical and Computational Research"
+        authors:
+          - "**Naren Prakash**"
         date: 2025-05
-        venue: Undergraduate Research Week, UCLA
+        # `journal` is read by RenderCV, `publisher` by the al_folio_cv site template.
+        journal: Undergraduate Research Week, UCLA
+        publisher: Undergraduate Research Week, UCLA
         summary: Contributed talk (presenter)
 
       - title: A Bayesian Approach to Play Prediction
+        authors:
+          - "**Naren Prakash**"
         date: 2024-12
-        venue: Bruin Sports Analytics Showcase, UCLA
+        journal: Bruin Sports Analytics Showcase, UCLA
+        publisher: Bruin Sports Analytics Showcase, UCLA
         summary: Contributed talk (presenter)
 
       - title: Autoencoders for Predictive Maintenance
+        authors:
+          - "**Naren Prakash**"
         date: 2024-08
-        venue: Halliburton technical seminar
+        journal: Halliburton technical seminar
+        publisher: Halliburton technical seminar
         summary: Internal seminar talk (presenter)
 
     Skills:
